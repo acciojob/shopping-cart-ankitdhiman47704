@@ -1,39 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shoping List</title>
-	<link rel="stylesheet" href="./css/list.css">
-<script src="./js/list.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<header id="heading">
-		Shopping List Calculator
-	</header>
-	<main onload="render()">
-		<table id="table1">
-			<caption></caption>
-			<tr>
-				<th>Item Name</th>
-				<th>Quantity</th>
-				<th>Price</th>
-				<th>Total</th> 
-			</tr>
-			<tr>
-        <form id="myinputs">
-          <td><input type="text" id="item-name-input" placeholder="Name"></td>
-          <td><input type="text" id="item-qty-input" placeholder="Qty"></td>
-          <td><input type="text" id="item-price-input" placeholder="Price"></td>
-        </form>
-        <td><button id="add" onclick="addData();">Add</button></td>
-      </tr>
+	<!-- the entire body must be written by student -->
+	productname: <input type="text" id="item-name-input" value="">
+    <br><br>
+    price: <input type="number" id="item-price-input" value="">
+    <br> <br>
+    <button id="add">Add</button>
+    <table id="item-list">
+        <thead>
+            <tr>
+                <th id="item">Product Name</th>
+                <th id="price">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
     </table>
-    <div id="total">Total Ammount is 0 $</div>
-  </main>
-	<footer></footer>
+    <h3 id="total">Grand Total : 0</h3>
+    <script type="text/javascript" src="script.js">
+</script>
+
 </body>
 
 </html>

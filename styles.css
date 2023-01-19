@@ -1,2 +1,10 @@
 
 /* Your CSS Code here. */
+td ,th{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+table{
+    border-collapse: collapse;
+}
